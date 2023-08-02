@@ -2,17 +2,34 @@
   "name": "@frameworkdotjs/impl-dotenv",
   "description": "A `dotenv` implementation extracted from `motdotla/dotenv`.",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frameworkdotjs/impl-dotenv"
+  },
   "main": "dotenv/index.js",
+  "types": "dotenv/index.d.ts",
   "files": [
     "dotenv",
     "dotenv-expand"
   ],
   "exports": {
-    ".": "./dotenv/index.js",
-    "dotenv": "./dotenv/index.js",
-    "dotenv-expand": "./dotenv-expand/index.js"
+    ".": {
+      "types": "./dotenv/index.d.ts",
+      "require": "./dotenv/index.js",
+      "default": "./dotenv/index.js"
+    },
+    "dotenv": {
+      "types": "./dotenv/index.d.ts",
+      "require": "./dotenv/index.js",
+      "default": "./dotenv/index.js"
+    },
+    "dotenv-expand": {
+      "types": "./dotenv-expand/index.d.ts",
+      "require": "./dotenv-expand/index.js",
+      "default": "./dotenv-expand/index.js"
+    }
   },
-  "license": "MIT",
   "devDependencies": {
     "dotenv": "^16.3.1",
     "dotenv-expand": "^10.0.0"
