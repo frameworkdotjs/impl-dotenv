@@ -1,0 +1,20 @@
+{
+  "name": "@frameworkdotjs/impl-dotenv",
+  "description": "A `dotenv` implementation extracted from `motdotla/dotenv`.",
+  "version": "0.0.1",
+  "main": "dotenv/index.js",
+  "files": [
+    "dotenv",
+    "dotenv-expand"
+  ],
+  "exports": {
+    ".": "./dotenv/index.js",
+    "dotenv": "./dotenv/index.js",
+    "dotenv-expand": "./dotenv-expand/index.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "dotenv-expand": "^10.0.0"
+  }
+}
